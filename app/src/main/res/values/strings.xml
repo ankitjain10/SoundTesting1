@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sound Testing</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="kk">close</string>
+    <string name="zdsd">toggle</string>
+    <string name="adas">open</string>
+    <string name="adsasda">^</string>
+    <string name="title_activity_internal_storage">InternalStorage</string>
+    <string name="title_activity_extenal_storage">ExtenalStorage</string>
+</resources>

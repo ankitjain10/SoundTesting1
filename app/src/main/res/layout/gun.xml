@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fffffefa">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffffefa">
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pistol"
+        android:id="@+id/buttonPistol"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="machine gun"
+        android:id="@+id/buttonMachine"
+        android:layout_alignTop="@+id/buttonPistol"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shotgun"
+        android:id="@+id/buttonShotgun"
+        android:layout_alignTop="@+id/buttonMachine"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All rounds"
+        android:id="@+id/buttonAlrounds"
+        android:layout_below="@+id/buttonPistol"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shotgun full"
+        android:id="@+id/buttonShotgunfull"
+        android:layout_below="@+id/buttonShotgun"
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sniper"
+        android:id="@+id/buttonSniper"
+        android:layout_below="@+id/buttonPistol"
+        android:layout_centerHorizontal="true"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagePiston"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shootsg"
+        android:layout_above="@+id/buttonPistol"
+        android:layout_alignEnd="@+id/buttonShotgun"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+    <SlidingDrawer
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:id="@+id/slidingDrawer"
+        android:layout_below="@+id/buttonAlrounds"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="^"
+            android:background="#fffffefa" />
+    </SlidingDrawer>
+</FrameLayout>

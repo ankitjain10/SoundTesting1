@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shootsg" android:state_hovered="true"/>
+    <item android:drawable="@drawable/shootsf"/>
+    <item android:drawable="@drawable/shootse"/>
+    <item android:drawable="@drawable/shootsd"/>
+    <item android:drawable="@drawable/shootsc"/>
+    <item android:drawable="@drawable/shootsb"/>
+    <item android:drawable="@drawable/shootsa" android:state_active="true"/>
+
+
+    <!--<item android:state_pressed="true" android:drawable="@drawable/ic_launcher_right_again"></item>
+    <item android:state_focused="true" android:drawable="@drawable/ic_launcher_right"></item>
+    <item android:drawable="@drawable/icon"></item>
+-->
+</selector>

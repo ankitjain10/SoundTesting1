@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.soundtesting" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Gun"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Slider"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".WebBrowser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SharedPrefs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".InternalStorage"
+            android:label="@string/title_activity_internal_storage" >
+        </activity>
+        <activity
+            android:name=".ExternalStorage"
+            android:label="@string/title_activity_extenal_storage" >
+        </activity>
+        <receiver android:name=".WidgetTesting"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+<meta-data></meta-data>
+
+        </receiver>
+    </application>
+
+</manifest>
